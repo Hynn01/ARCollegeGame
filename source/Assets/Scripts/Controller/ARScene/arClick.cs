@@ -35,7 +35,9 @@ public class arClick : MonoBehaviour {
             if (toBeDestroyed != null)
             {
                 toBeDestroyed.GetComponent<SpriteRenderer>().sprite = null;
+                //Destroy(toBeDestroyed);
                 addFoodToDatabase(tag);
+                
             }
         }
     }
