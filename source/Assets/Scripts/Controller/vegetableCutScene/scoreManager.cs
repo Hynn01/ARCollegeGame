@@ -20,7 +20,7 @@ public class scoreManager : MonoBehaviour
         GameObject[] objs = GameObject.FindGameObjectsWithTag("score");
         foreach (GameObject i in objs)
         {
-            Debug.Log("Destroy(i)" + i);
+            //Debug.Log("Destroy(i)" + i);
             Destroy(i);
         }
 

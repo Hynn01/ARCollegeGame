@@ -19,35 +19,43 @@ public class timeManager : MonoBehaviour
     void Start()
     {
         Debug.Log("Restart");
+        Time.timeScale=1;
         TotalTime = 10;
         over = false;
         StartCoroutine(CountDown());
+        Debug.Log("RestartEnd");
     }
 
     IEnumerator CountDown()
     {
         while (TotalTime >= 0)
         {
+            Debug.Log("TotalTime:" + TotalTime);
             //text.GetComponent<Text>().text = TotalTime.ToString();
             setTime(TotalTime);
             //Thread.Sleep(1000);
             if (TotalTime != 0)
             {
+                Debug.Log("TotalTime != 0");
                 yield return new WaitForSeconds(1);
             }
             else
             {
+                Debug.Log("Time.timeScale = 0");
                 Time.timeScale = 0;//停止游戏
                 //GameObject.Find("outImage").GetComponent<outImage>().onShow();//弹出分数提示栏，结束游戏
                 //GameObject.Find("outEnsure").GetComponent<outImage>().onShow();//弹出分数提示栏，结束游戏
                 //gradeShow.onShow();
             }
 
+            Debug.Log("TotalTime--");
+
             //Invoke("TestFunc", 1f);
             TotalTime--;
+            Debug.Log("IEnumerator");
         }
         //yield return null;
-
+        Debug.Log("IEnumerator111");
     }
 
     private void Update()
