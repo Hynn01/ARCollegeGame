@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Controller\MainScene\pack_click.cs" />
     <Compile Include="Assets\Scripts\Controller\MainScene\pan_click.cs" />
     <Compile Include="Assets\Scripts\Controller\MainScene\pass_button.cs" />
+    <Compile Include="Assets\Scripts\Controller\MainScene\pool_click.cs" />
     <Compile Include="Assets\Scripts\Controller\vegetableCutScene\gradeShow.cs" />
     <Compile Include="Assets\Scripts\Controller\vegetableCutScene\knife.cs" />
     <Compile Include="Assets\Scripts\Controller\vegetableCutScene\knifeMove.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="Assets\Scripts\Controller\vegetableCutScene\timeManager.cs" />
     <Compile Include="Assets\Scripts\Controller\vegetableCutScene\vegetableCut.cs" />
     <Compile Include="Assets\Scripts\Controller\vegetableCutScene\vegetableFly.cs" />
+    <Compile Include="Assets\Scripts\Controller\washScene\wash_back_button.cs" />
     <Compile Include="Assets\Scripts\Dao\BaseDao.cs" />
     <Compile Include="Assets\Scripts\Dao\FoodMaterialDao.cs" />
     <Compile Include="Assets\Scripts\Dao\MenuDao.cs" />
@@ -178,19 +180,19 @@
     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -396,35 +398,35 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="LitJson">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Assets/Plugins/LitJson.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Data">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Assets/Plugins/Mono.Data.dll</HintPath>
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Assets/Plugins/Mono.Data.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Data.Sqlite">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="System.Data">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Assets/Plugins/System.Data.dll</HintPath>
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Assets/Plugins/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Assets/Plugins/LitJson.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Volumes/NO NAME/ARCollegeGame/source/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>/Users/ella01/Desktop/ARCollegeGame/source/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
