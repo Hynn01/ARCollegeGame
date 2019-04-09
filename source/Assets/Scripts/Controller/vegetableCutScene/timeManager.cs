@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class timeManager : MonoBehaviour
 {
     //public GameObject text;
-    public int TotalTime = 30;
+    public int TotalTime = 10;
 
     // public GameObject tDObj;              //所有数字对应的  预制对象（tag需要手动添加并更改为score,方便下面销毁）
     public GameObject[] tDigits;           //每个数字对应的贴纸
@@ -17,6 +18,8 @@ public class timeManager : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Restart");
+        TotalTime = 10;
         over = false;
         StartCoroutine(CountDown());
     }
