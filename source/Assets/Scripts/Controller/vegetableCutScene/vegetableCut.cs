@@ -14,7 +14,7 @@ public class vegetableCut : MonoBehaviour
     void Start()
     {
         col = GetComponent<BoxCollider2D>();
-        scores = GameObject.Find("score1");
+        scores = GameObject.Find("scoreManager");
     }
 
     private void CreateHalf(GameObject obj, int index)       //创建半个水果
@@ -36,19 +36,22 @@ public class vegetableCut : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            //Debug.Log("Input.GetMouseButton(000)");
             Debug.Log("col.transform.position:" + col.transform.position);
-            //Debug.Log("Input.mousePosition:" + Input.mousePosition);
-            //Debug.Log("Camera.main.ScreenToWorldPoint(Input.mousePosition):" + Camera.main.ScreenToWorldPoint(Input.mousePosition));
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if (col.OverlapPoint(new Vector2(touchPosition.x, touchPosition.y))) ;                //鼠标在当前水果2Dcollider内
-            {                
-                //if (name == "jpg0(Clone)")                //金苹果+20分
-                //    scores.SendMessage("setScore", 20);
-                //else if (name != "cs(Clone)")              //非仓鼠+1分
-                //    scores.SendMessage("setScore", 1);
-                //else                                     //切开仓鼠扣血
-                //    scores.SendMessage("cutOne");
+            {
+                Debug.Log("scoresObject：" + scores);
+                Debug.Log("name:" + name);
+                if (name == "pork(Clone)")
+                    scores.SendMessage("setScore", 5);
+                else if (name == "eggplant(Clone)")
+                    scores.SendMessage("setScore", 4);
+                else if (name == "pepper(Clone)")
+                    scores.SendMessage("setScore", 3);
+                else if (name == "onion(Clone)")
+                    scores.SendMessage("setScore", 2);
+                else
+                    scores.SendMessage("setScore", 1);
                 CreateHalf(obj1, 0);
                 CreateHalf(obj2, 1);
                 Createwz();

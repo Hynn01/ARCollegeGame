@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Controller\BackpackScene\pack_back.cs" />
     <Compile Include="Assets\Scripts\Controller\CookScene\cooking_back_button.cs" />
     <Compile Include="Assets\Scripts\Controller\CookScene\cooktime.cs" />
+    <Compile Include="Assets\Scripts\Controller\CutScene\backButton.cs" />
     <Compile Include="Assets\Scripts\Controller\CutScene\cutting_back_button.cs" />
     <Compile Include="Assets\Scripts\Controller\CutScene\inImage.cs" />
     <Compile Include="Assets\Scripts\Controller\GameGlobal.cs" />
@@ -85,7 +86,8 @@
     <Compile Include="Assets\Scripts\Controller\MainScene\pan_click.cs" />
     <Compile Include="Assets\Scripts\Controller\MainScene\pass_button.cs" />
     <Compile Include="Assets\Scripts\Controller\MainScene\pool_click.cs" />
-    <Compile Include="Assets\Scripts\Controller\vegetableCutScene\gradeShow.cs" />
+    <Compile Include="Assets\Scripts\Controller\vegetableCutScene\finalGradeShow.cs" />
+    <Compile Include="Assets\Scripts\Controller\vegetableCutScene\finalSureButton.cs" />
     <Compile Include="Assets\Scripts\Controller\vegetableCutScene\knife.cs" />
     <Compile Include="Assets\Scripts\Controller\vegetableCutScene\knifeMove.cs" />
     <Compile Include="Assets\Scripts\Controller\vegetableCutScene\scoreManager.cs" />

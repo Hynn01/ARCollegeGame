@@ -15,6 +15,6 @@ public class wash_back_button : MonoBehaviour
     private void OnClick()
     {
         SceneManager.LoadScene("mainScene");
-        Debug.Log("back");
+        //Debug.Log("back");
     }
 }

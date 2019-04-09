@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class gradeShow: MonoBehaviour
+public class finalGradeShow: MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
