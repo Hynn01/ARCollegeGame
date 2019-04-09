@@ -10,11 +10,12 @@ public class washVeg : MonoBehaviour
     void Start()
     {
 
-        float y = -5.75f;
+        float y = 0f;
         float x = Random.Range(-6.5f, 6.5f); //随机蔬菜出现的x坐标
         for(int i=0;i < vegs.Length; i++) {
             GameObject veg = Instantiate(vegs[i]) as GameObject;
-            veg.transform.position = new Vector3(x, y, 0);
+            veg.transform.position = new Vector3(x, y, 99);
+            veg.transform.parent = this.transform;
         }
 
     }
@@ -22,6 +23,5 @@ public class washVeg : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
