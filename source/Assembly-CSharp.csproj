@@ -92,7 +92,10 @@
     <Compile Include="Assets\Scripts\Controller\vegetableCutScene\timeManager.cs" />
     <Compile Include="Assets\Scripts\Controller\vegetableCutScene\vegetableCut.cs" />
     <Compile Include="Assets\Scripts\Controller\vegetableCutScene\vegetableFly.cs" />
+    <Compile Include="Assets\Scripts\Controller\washScene\vegDance.cs" />
     <Compile Include="Assets\Scripts\Controller\washScene\wash_back_button.cs" />
+    <Compile Include="Assets\Scripts\Controller\washScene\washVeg.cs" />
+    <Compile Include="Assets\Scripts\Controller\washScene\waterTap_click.cs" />
     <Compile Include="Assets\Scripts\Dao\BaseDao.cs" />
     <Compile Include="Assets\Scripts\Dao\FoodMaterialDao.cs" />
     <Compile Include="Assets\Scripts\Dao\MenuDao.cs" />

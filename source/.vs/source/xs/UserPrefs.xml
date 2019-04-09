@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{B6B6D8C0-EA44-18DB-66F3-A70D94D3D0DD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Controller/CookScene/cooking_back_button.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Controller/washScene/waterTap_click.cs">
     <Files>
       <File FileName="Assets/Scripts/Controller/MainScene/pan_click.cs" Line="5" Column="1" />
       <File FileName="Assets/Scripts/Controller/MainScene/pool_click.cs" Line="17" Column="37" />
-      <File FileName="Assets/Scripts/Controller/CookScene/cooking_back_button.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Controller/washScene/wash_back_button.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Controller/CookScene/cooking_back_button.cs" Line="2" Column="9" />
+      <File FileName="Assets/Scripts/Controller/washScene/wash_back_button.cs" Line="2" Column="7" />
+      <File FileName="Assets/Scripts/Controller/washScene/waterTap_click.cs" Line="24" Column="47" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
