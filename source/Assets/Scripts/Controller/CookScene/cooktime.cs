@@ -12,18 +12,33 @@ public class cooktime : MonoBehaviour
     public Button btn;
     public GameObject image1;
     public Button slic;
+    public Button addSalt;
+    public Button addSugar;
+    public Button addAginomoto;
+    public Button addOil;
+    public Button addSoy;
+    public GameObject parent;
     int i = 0;
     int j = 0;
     float speed = 40;
     private float totalTime = 0;
     private float intervalTime = 1;
+    private GameObject salt;
+    private GameObject sugar;
+    private GameObject aginomoto;
+    private int saltNumber,sugarNumber,aginomotoNumber,oilNumber,soyNumber;
     private Color s;
     // Use this for initialization
     void Start()
     {
-        Debug.Log("我的天");
+        //Debug.Log("我的天");
         btn.onClick.AddListener(OnClick);
         slic.onClick.AddListener(OnClickSlic);
+        addSalt.onClick.AddListener(OnClickSalt);
+        addSugar.onClick.AddListener(OnClickSugar);
+        addOil.onClick.AddListener(OnClickOil);
+        addSoy.onClick.AddListener(OnClickSoy);
+        addAginomoto.onClick.AddListener(OnClickAginomoto);
         int count = transform.parent.childCount - 1;//Panel移位
         CountDownText.transform.SetSiblingIndex(count);//Panel移位
         CountDownText.text = string.Format("{0:D2} : {1:D2}", (int)totalTime / 60, (int)totalTime % 60);
@@ -33,20 +48,68 @@ public class cooktime : MonoBehaviour
         j = j + 1;
         float step = speed * Time.deltaTime;
         Quaternion targetAngels;
+        int childCount =  parent.transform.childCount;
+        for (int i = 0; i < childCount; i++)
+        {
+            Destroy(parent.transform.GetChild(i).gameObject);
+        }
+
+
         if (j % 2 == 1)
         {
 
-            targetAngels = Quaternion.Euler(24f, -9f, 48f);
-            slic.transform.rotation = Quaternion.Slerp(slic.transform.rotation, targetAngels, step);
+            // targetAngels = Quaternion.Euler(24f, 0, 0);
+            //slic.transform.rotation = Quaternion.Slerp(slic.transform.rotation, targetAngels, step);
+            slic.transform.Rotate(new Vector3(0, 0, -1) * 10);
             this.changeSpriteByImage("food2");
         }
         else
         {
-            targetAngels = Quaternion.Euler(-24f, 9f, -48f);
-            slic.transform.rotation = Quaternion.Slerp(slic.transform.rotation, targetAngels, step);
+            //targetAngels = Quaternion.Euler(-24f, 0, 0);
+            //slic.transform.rotation = Quaternion.Slerp(slic.transform.rotation, targetAngels, step);
+            slic.transform.Rotate(new Vector3(0,0,1) * 10);
             this.changeSpriteByImage("food1");
         }
 
+    }
+
+    //加盐
+    private void OnClickSalt()
+    {
+        saltNumber++;
+        GameObject itemPrefab = Resources.Load<GameObject>("Prefabs/salt");
+        salt = GameObject.Instantiate(itemPrefab, parent.transform, true);//分配父类的时候是否保持原始的世界位置，false不保留，true保留
+    }
+
+    //加糖
+    private void OnClickSugar()
+    {
+        sugarNumber++;
+        GameObject itemPrefab = Resources.Load<GameObject>("Prefabs/sugar");
+        sugar = GameObject.Instantiate(itemPrefab, parent.transform, true);//分配父类的时候是否保持原始的世界位置，false不保留，true保留
+    }
+    //加味精
+    private void OnClickAginomoto()
+    {
+        aginomotoNumber++;
+        GameObject itemPrefab = Resources.Load<GameObject>("Prefabs/aginomoto");
+        aginomoto = GameObject.Instantiate(itemPrefab, parent.transform, true);//分配父类的时候是否保持原始的世界位置，false不保留，true保留
+
+    }
+    //加油
+    private void OnClickOil()
+    {
+        oilNumber++;
+        GameObject itemPrefab = Resources.Load<GameObject>("Prefabs/oil");
+        aginomoto = GameObject.Instantiate(itemPrefab, parent.transform, true);//分配父类的时候是否保持原始的世界位置，false不保留，true保留
+
+    }
+    //加酱油
+    private void OnClickSoy()
+    {
+        soyNumber++;
+        GameObject itemPrefab = Resources.Load<GameObject>("Prefabs/soy");
+        aginomoto = GameObject.Instantiate(itemPrefab, parent.transform, true);//分配父类的时候是否保持原始的世界位置，false不保留，true保留
     }
     //改变食物的图片
     void changeSpriteByImage(string foodName)
@@ -69,17 +132,18 @@ public class cooktime : MonoBehaviour
 
         if (i % 2 == 1)
         {
-            targetAngels = Quaternion.Euler(24f, -9f, 48f);
-            btn.transform.rotation = Quaternion.Slerp(btn.transform.rotation, targetAngels, step);
+            
+            Sprite spriteB = Resources.Load<Sprite>("Cooked/switch_turned");
+            btn.GetComponent<SpriteRenderer>().sprite = spriteB;
             StartCoroutine(CountDown());
         }
         else
         {
-            targetAngels = Quaternion.Euler(-24f, 9f, -48f);
-            btn.transform.rotation = Quaternion.Slerp(btn.transform.rotation, targetAngels, step);
+            Sprite spriteB = Resources.Load<Sprite>("Cooked/switch");
+            btn.GetComponent<SpriteRenderer>().sprite = spriteB;
             StopCoroutine(CountDown());
         }
-        //this.transform.Rotate(Vector3.forward * speed);
+      
     }
 
     private IEnumerator CountDown()

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - 1-tomato
   - 2-egg
+  - tomato
   layers:
   - Default
   - TransparentFX
@@ -42,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: floor
+    uniqueID: 1101734165
+    locked: 0
+  - name: item
+    uniqueID: 1107743103
     locked: 0
