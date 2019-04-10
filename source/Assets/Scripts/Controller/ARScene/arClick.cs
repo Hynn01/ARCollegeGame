@@ -13,7 +13,7 @@ public class arClick : MonoBehaviour {
     void Start () {
         backpackService = new BackpackService();
     }
-	
+
 	//点击监听
 	void Update () {
         if (Input.GetMouseButtonDown(0))
@@ -37,7 +37,7 @@ public class arClick : MonoBehaviour {
                 toBeDestroyed.GetComponent<SpriteRenderer>().sprite = null;
                 //Destroy(toBeDestroyed);
                 addFoodToDatabase(tag);
-                
+
             }
         }
     }
