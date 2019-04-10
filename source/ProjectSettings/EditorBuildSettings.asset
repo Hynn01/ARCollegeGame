@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/vegetableCutScene.unity
     guid: d9a706874a64fb74ea217a3e0506a39e
+  - enabled: 1
+    path: Assets/Scenes/washScene.unity
+    guid: e802e8c4cb977aa48a84146b189df73d
   m_configObjects: {}

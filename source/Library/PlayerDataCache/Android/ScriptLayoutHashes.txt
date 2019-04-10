@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/DSoftware/UnityProject/ARCollegeGame/source/20190331.apk
+D:/大创/ARCollegeGame/source/Packages/argame.apk
 SceneListBegin?
 Assets/Scenes/loginScene.unity
 Assets/Scenes/mainScene.unity
@@ -10,6 +10,7 @@ Assets/Scenes/cookingScene.unity
 Assets/Scenes/gameLevelScene.unity
 Assets/Scenes/arCamrea.unity
 Assets/Scenes/vegetableCutScene.unity
+Assets/Scenes/washScene.unity
 SceneListEnd?
 a832071a4388f4441f25608d5867eeb8 Assembly-CSharp.dll:.VRIntegrationHelper
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -31,6 +32,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.P
 2c4eaab76c2369a5b593eec597c4b0c3 Assembly-CSharp.dll:.ItemImage
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Vuforia.TurnOffBehaviour
+286b0b1cee199bf4f9cc73ae851d1201 Assembly-CSharp.dll:.waterTap_click
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Vuforia.GLErrorHandler
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.knife
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Vuforia.ComponentFactoryStarterBehaviour
@@ -71,6 +73,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.UserService
 9ab74e15bfa150e57bd32caa0940cf1a Assembly-CSharp.dll:Vuforia.ImageTargetBehaviour
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.wash_back_button
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -104,6 +107,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 0fd6822f6177297bd0eb4d83cc7a9030 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+c678b08a75ddd8100991baafacfe4b91 Assembly-CSharp.dll:.washVeg
 750cc4178ad07e7a593bb5184bbd10b5 Assembly-CSharp.dll:Vuforia.VirtualButtonBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.CookService
 d0a870ec1b96cb1471365d9252b3c013 Assembly-CSharp.dll:.arCamera_button
@@ -119,7 +123,9 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.register_button
 00274a21279f5cb831ce20f895049e38 Unity.TextMeshPro.dll:TMPro.TMP_SubMeshUI
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.map_click
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 1dcb82730d983b77cec736c6ef19f814 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -147,9 +153,11 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.CameraService
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.vegDance
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GameGlobal
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Vuforia.WireframeTrackableEventHandler
+1477ebecf729178270bb5a35a10d17fe Assembly-CSharp.dll:.cooktime
 f64f112de5d2affaf32b7b5717241cf7 Assembly-CSharp.dll:Vuforia.MultiTargetBehaviour
 ec36c809936c6fd833cfe993ae5f06d9 Assembly-CSharp.dll:Vuforia.VuforiaBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Assembly-CSharp.dll:Vuforia.WireframeBehaviour
@@ -159,9 +167,10 @@ ec36c809936c6fd833cfe993ae5f06d9 Vuforia.UnityExtensions.dll:Vuforia.VuforiaAbst
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.VuforiaDeinitBehaviour
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 5aeb039b9aa69c79cb25408984ff50d5 Assembly-CSharp.dll:.GridPanel
+33d93faa90c8628dbd950748b5e5b1e3 Assembly-CSharp.dll:.timeManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Vuforia.TurnOffWordBehaviour
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.AmapEvent
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Vuforia.ReconstructionFromTargetBehaviour
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.pool_click
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ar_click
@@ -212,6 +221,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 c0067977eddd2e61d575d7a1931dbedf Assembly-CSharp.dll:Vuforia.WordBehaviour
 2ad05b52017570bc815b7758a4e8ca97 Assembly-CSharp.dll:Vuforia.ObjectTargetBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MapService
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.backButton
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
@@ -220,14 +230,15 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 e6ae44c9f26619a4901e584879ddc6fc Assembly-CSharp.dll:Vuforia.DefaultSmartTerrainEventHandler
 5aeb039b9aa69c79cb25408984ff50d5 Assembly-CSharp.dll:.GridImage
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.finalSureButton
 9fa9f1030164f334ee65e118172f3e58 Assembly-CSharp.dll:Vuforia.UserDefinedTargetBuildingBehaviour
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.cooking_back_button
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.CameraAdaptation
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.gradeShow
+ba23348e258fa7551ab56e141c72f708 Assembly-CSharp.dll:.finalGradeShow
 fd92c2a103346e65a5a3e078e6dbea45 Assembly-CSharp.dll:.vegetableFly
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.arClick
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.scoreManager
+ba23348e258fa7551ab56e141c72f708 Assembly-CSharp.dll:.scoreManager
 eacad14f00c3dd9838b18394aba7c225 Assembly-CSharp.dll:Vuforia.VuforiaConfiguration

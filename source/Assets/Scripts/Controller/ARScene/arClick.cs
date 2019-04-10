@@ -34,8 +34,8 @@ public class arClick : MonoBehaviour {
             GameObject toBeDestroyed = GameObject.FindGameObjectWithTag(tag);
             if (toBeDestroyed != null)
             {
-                toBeDestroyed.GetComponent<SpriteRenderer>().sprite = null;
-                //Destroy(toBeDestroyed);
+                //toBeDestroyed.GetComponent<SpriteRenderer>().sprite = null;
+                Destroy(toBeDestroyed);
                 addFoodToDatabase(tag);
 
             }

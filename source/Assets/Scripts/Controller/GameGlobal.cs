@@ -18,9 +18,13 @@ public class GameGlobal : MonoBehaviour
     public static string filePath;
     private void Start()
     {
+#if UNITY_EDITOR
         Debug.Log("初始化存档");
         fullPath = Application.dataPath + "/doc";
         filePath = Application.dataPath + "/doc/process.json";
+#elif UNITY_ANDROID
+        filePath = Application.persistentDataPath + "/"+"process.json";
+#endif
         initBackPack();
     }
     //从存档中获取背包信息并加载
@@ -33,14 +37,21 @@ public class GameGlobal : MonoBehaviour
     public static void save()
     {
         JsonData jsonStr = JsonMapper.ToJson(backPack);
+#if UNITY_EDITOR
         if (!Directory.Exists(fullPath))
         {
             Directory.CreateDirectory(fullPath);
             if (!File.Exists(filePath))
             {
-                File.Create(filePath);
+                File.Create(filePath).Close();
             }
         }
+#elif UNITY_ANDROID
+        if (!File.Exists(filePath))
+        {
+            File.Create(filePath).Close();
+        }
+#endif
         File.WriteAllText(filePath, jsonStr.ToString());
     }
 
@@ -50,8 +61,6 @@ public class GameGlobal : MonoBehaviour
         if (File.Exists(filePath))
         {
             backPack = JsonMapper.ToObject<BackPack>(File.ReadAllText(filePath));
-            FileStream fs = new FileStream(filePath, FileMode.Open);
-            fs.Close();
         }
         if (backPack != null)
         {

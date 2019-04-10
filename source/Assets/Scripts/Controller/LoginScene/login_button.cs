@@ -9,7 +9,6 @@ public class login_button : MonoBehaviour {
     InputField account;
     InputField password;
     Text text;
-    //背包管理服务
     private ILoginService loginService;
     void Start()
     { 
@@ -22,10 +21,10 @@ public class login_button : MonoBehaviour {
     private  void OnClick()
     {
         loginService = new LoginService();
-        string name = account.text;
-        string passwd = password.text;
-        try
-        {
+        string name = account.text.ToString();
+        string passwd = password.text.ToString();
+        //try
+        //{
             if (loginService.login(name, passwd))
             {
                 Debug.Log("登录成功！");
@@ -36,10 +35,10 @@ public class login_button : MonoBehaviour {
             {
                 Debug.Log("登录失败！");
             }
-        }
-        catch(Exception e)
-        {
-            text.text = e.Message;
-        }
+        //}
+        //catch(Exception e)
+        //{
+        //    Debug.Log(e.Message);
+        //}
     }
 }
