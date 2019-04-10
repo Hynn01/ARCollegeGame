@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{B6B6D8C0-EA44-18DB-66F3-A70D94D3D0DD}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Controller/vegetableCutScene/timeManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Controller/vegetableCutScene/finalGradeShow.cs" Line="20" Column="34" />
+      <File FileName="Assets/Scripts/Controller/vegetableCutScene/scoreManager.cs" Line="7" Column="5" />
+      <File FileName="Assets/Scripts/Controller/vegetableCutScene/timeManager.cs" Line="21" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
