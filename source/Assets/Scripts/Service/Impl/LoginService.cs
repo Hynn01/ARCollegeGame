@@ -33,6 +33,14 @@ public class LoginService:ILoginService{
 
     public bool register(User user)
     {
-        throw new System.NotImplementedException();
+        if (userDao.isUserNameExists(user.name))
+        {
+            return false;
+        }
+        else
+        {
+            userDao.insertUser(user);
+            return true;
+        }
     }
 }

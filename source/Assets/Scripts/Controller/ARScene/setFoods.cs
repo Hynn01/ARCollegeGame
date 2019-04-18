@@ -4,15 +4,15 @@ public class setFoods : MonoBehaviour {
 
  
     void Start () {
-
+        changeSpriteByImage();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (this.GetComponent<SpriteRenderer>().sprite == null)
-        {
-            changeSpriteByImage();
-        }
+        //if (this.GetComponent<SpriteRenderer>().sprite == null)
+        //{
+        //    changeSpriteByImage();
+        //}
     }
     void changeSpriteByImage()
     {

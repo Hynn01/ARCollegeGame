@@ -25,6 +25,7 @@ public class UserDao:BaseDao{
         else
         {
             User user = new User();
+           
             user.id = int.Parse(sdr["id"].ToString());
             user.name = sdr["name"].ToString();
             user.imagePath = sdr["imagePath"].ToString();
@@ -57,6 +58,7 @@ public class UserDao:BaseDao{
         string sql = "insert into " + TABLE_NAME + " (name, password, imagePath, acid, sweet, fresh, spicy, salty, province, grade )"+
             " VALUES( '" + user.name + "', '" + user.password + "', '" + user.imagePath
             + "'," + user.acid+", "+user.sweet+", "+user.fresh+", "+user.spicy+", "+user.salty+", '"+user.province+"', "+user.grade+" )";
+        Debug.Log(sql);
         sh.ExecuteQuery(sql);
     }
     //更新用户信息

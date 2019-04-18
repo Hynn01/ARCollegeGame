@@ -24,10 +24,10 @@ public class BaseDao{
 		if(!File.Exists(appDBPath))
  		{
             TextAsset txt = Resources.Load("GameDB",typeof(TextAsset))as TextAsset;
-			//拷贝至规定的地方
+		    //拷贝至规定的地方
 		    File.WriteAllBytes(appDBPath, txt.bytes);
 		}
-		//在这里重新得到db对象。
+        //在这里重新得到db对象。
 		sh = new SQLiteHelper("URI=file:" + appDBPath);
 #endif
     }
