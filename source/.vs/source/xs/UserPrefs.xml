@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{B6B6D8C0-EA44-18DB-66F3-A70D94D3D0DD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Controller/vegetableCutScene/finalGradeShow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../index.html">
     <Files>
-      <File FileName="Assets/Scripts/Controller/vegetableCutScene/finalGradeShow.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Controller/vegetableCutScene/scoreManager.cs" Line="23" Column="15" />
-      <File FileName="Assets/Scripts/Controller/vegetableCutScene/timeManager.cs" Line="22" Column="26" />
-      <File FileName="Assets/Scripts/Controller/vegetableCutScene/vegetableFly.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Controller/MainScene/pool_click.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Controller/vegetableCutScene/vegetableCut.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Controller/vegetableCutScene/vegetableFly.cs" Line="21" Column="9" />
+      <File FileName="Assets/Scripts/Controller/vegetableCutScene/knife.cs" Line="6" Column="13" />
+      <File FileName="../../index.html" Line="15" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

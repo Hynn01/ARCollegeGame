@@ -1,7 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/mainScene.unity
-  isLoaded: 0
-  isActive: 0
 - path: Assets/Scenes/packScene.unity
   isLoaded: 0
   isActive: 0
@@ -9,14 +6,26 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
 - path: Assets/Scenes/cookingScene.unity
-  isLoaded: 1
+  isLoaded: 0
   isActive: 0
 - path: Assets/Scenes/arCamrea.unity
   isLoaded: 0
   isActive: 0
 - path: Assets/washScene.unity
-  isLoaded: 1
-  isActive: 1
-- path: Assets/Scenes/arCamrea.unity
   isLoaded: 0
   isActive: 0
+- path: Assets/Scenes/cuttingScene.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Scenes/loginScene.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Scenes/vegetableCutScene.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/Scenes/washScene.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Scenes/mainScene.unity
+  isLoaded: 1
+  isActive: 1
